@@ -4,7 +4,7 @@ import { weatherContext } from "../Context/Context.js";
 
 const Container = () => {
 
-    const { data ,location} = useContext(weatherContext);
+    const { data } = useContext(weatherContext);
 
    
   return (
