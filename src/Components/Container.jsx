@@ -4,8 +4,9 @@ import { weatherContext } from "../Context/Context.js";
 
 const Container = () => {
 
-    const { data } = useContext(weatherContext);
+    const { data ,location} = useContext(weatherContext);
 
+   
   return (
 <div className="container">
           <div className="top">

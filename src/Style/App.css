@@ -5,16 +5,21 @@
   padding: 0;
 }
 
-p{
-  font-size:  1.6rem;
+.main-container{
+  height: 100vh;
 }
 
+p {
+  font-size: 1.6rem;
+}
 
-h1{
+h1 {
   font-size: 6rem;
+  text-align: center;
+  padding-top: 300px;
 }
 
-.app{
+.app {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -22,42 +27,68 @@ h1{
   color: whitesmoke;
 }
 
-.app::before{
-content: "";
-background: url("https://images.pexels.com/photos/1114892/pexels-photo-1114892.jpeg?cs=srgb&dl=pexels-johannes-plenio-1114892.jpg&fm=jpg") no-repeat center center/cover;
-position: absolute;
-width:100%;
-height: 100%;
-top: 0;
-left: 0;
-z-index: -1;
-
+.app::before {
+  content: "";
+  background: url("https://nordicapis.com/wp-content/uploads/5-Best-Free-and-Paid-Weather-APIs-2019-e1587582023501.png") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-
-.app .search{
-  text-align: center;
-  padding: 1rem;
-
+.input-container {
+  background: url("https://nordicapis.com/wp-content/uploads/5-Best-Free-and-Paid-Weather-APIs-2019-e1587582023501.png") no-repeat center center/cover;
+  background: url("https://images.ctfassets.net/hrltx12pl8hq/6TIZLa1AKeBel0yVO7ReIn/1fc0e2fd9fcc6d66b3cc733aa2547e11/weather-images.jpg?fit=fill&w=800&h=300");
+  padding: 60px;
 }
 
-.app .input{
-  padding: 0.7rem 1.5rem;
-  font-size: 1.2rem;
-  border-radius: 25px;
-  border:  1px solid rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.1);
-  margin-top: 10px;
+.search {
+  margin: auto;
+  position: relative;
+  width: 300px;
 }
-::placeholder{
+
+.input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+  color: black;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.search-button {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  background: #d1095e;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+::placeholder {
   color: #f8f8f8;
-
 }
-.container{
+
+.container {
   max-width: 700px;
   height: 700px;
   margin: auto;
-  padding:  0 1rem;
+  padding: 0 1rem;
   position: relative;
   top: 10%;
   display: flex;
@@ -65,20 +96,19 @@ z-index: -1;
   justify-content: space-between;
 }
 
-
-.app .top{
-width: 100%;
-margin: 1rem auto;
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
 }
 
-.app .description{
+.app .description {
   position: relative;
   right: -90%;
   transform-origin: 0 0;
   transform: rotate(270deg);
 }
 
-.app .bottom{
+.app .bottom {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -89,6 +119,15 @@ margin: 1rem auto;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.bold{
+.bold {
   font-weight: 700;
 }
+
+
+@media only screen and (max-width: 767px) {
+  .main-container{
+    height: 100vh;
+  }
+  h1 {
+    font-size: 4rem;
+    }}

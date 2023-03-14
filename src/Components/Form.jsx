@@ -5,7 +5,8 @@ const Form = () => {
   const { location, setLocation, fetchdate } = useContext(weatherContext);
 
   return (
-    <div className="search">
+   <div className="input-container">
+     <div className="search">
       <input
         className="input"
         type="text"
@@ -13,8 +14,9 @@ const Form = () => {
         value={location}
         onChange={(event) => setLocation(event.target.value)}
       />
-      <button onClick={fetchdate}>Search</button>
+      <button onClick={fetchdate} className="search-button">Search</button>
     </div>
+   </div>
   );
 };
 
