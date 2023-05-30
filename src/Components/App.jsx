@@ -13,7 +13,7 @@ function App() {
       </div>
       <div className="app">
         {error && <h1>city not found</h1>}
-        {pending && <h1>Enter a City ame</h1>}
+        {pending && <h1>Enter a City name</h1>}
         {data && !error && <Container />}
       </div>
     </div>
