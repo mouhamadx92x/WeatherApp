@@ -86,7 +86,7 @@ input::placeholder {
 
 .container {
   max-width: 700px;
-  height: 700px;
+  height: 400px;
   margin: auto;
   padding: 0 1rem;
   position: relative;
@@ -94,6 +94,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .app .top {
@@ -125,9 +126,16 @@ input::placeholder {
 
 
 @media only screen and (max-width: 767px) {
-  .main-container{
-    height: 100vh;
+ 
+  p{
+    font-size: 1rem;
   }
-  h1 {
+  h1{
     font-size: 4rem;
-    }}
+    padding-top: 150px;
+  }
+  .container{
+    height: 200px;
+    max-width: 700px;
+  }
+ }
